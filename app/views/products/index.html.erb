@@ -3,7 +3,8 @@
 <ul>
   <% @products.each do |product| %>
     <li>
-      <%= link_to product.title, product %>
+      <p><%= link_to product.title, product %>
+      (Category: <%= product.category.name%>)</p>
     </li>
   <% end %>
 </ul>
