@@ -10,7 +10,7 @@ Product.delete_all
 
 676.times do
   Product.create(
-    title:          Faker::Commerce.name,
+    title:          Faker::Commerce.brand,
     price:          Faker::Commerce.price,
     stock_quantity: Faker::Number.between(from: 1, to: 1000)
   )
